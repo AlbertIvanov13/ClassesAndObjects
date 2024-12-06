@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogClass", "DogClass\DogClass.csproj", "{6893F5D3-6218-424F-BDC5-FBB88DC8DAB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advertisement Message", "Advertisement Message\Advertisement Message.csproj", "{B42BBF32-5EBC-45BE-BEF0-8D31B8E52DA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6893F5D3-6218-424F-BDC5-FBB88DC8DAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6893F5D3-6218-424F-BDC5-FBB88DC8DAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6893F5D3-6218-424F-BDC5-FBB88DC8DAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42BBF32-5EBC-45BE-BEF0-8D31B8E52DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42BBF32-5EBC-45BE-BEF0-8D31B8E52DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42BBF32-5EBC-45BE-BEF0-8D31B8E52DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42BBF32-5EBC-45BE-BEF0-8D31B8E52DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
