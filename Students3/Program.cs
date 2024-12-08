@@ -6,16 +6,19 @@
 		{
 			int studentsCount = int.Parse(Console.ReadLine());
 
-			List<string> students = new List<string>();
-
-			Student student = new Student();
-
+			List<string> newStudent = new List<string>();
+			List<Student> newStudentList = new List<Student>();
 			for (int i = 0; i < studentsCount; i++)
 			{
-				students = Console.ReadLine().Split(" ").ToList();
-				student.FirstName = students[0];
-				student.LastName = students[1];
-				student.Grade = Convert.ToDecimal(students[2]);
+				newStudent = Console.ReadLine().Split(" ").ToList();
+
+				newStudentList.Add(new Student { FirstName = newStudent[0], LastName = newStudent[1], Grade = Convert.ToDecimal(newStudent[2]) });
+			}
+
+			var orderedStudents = newStudentList.OrderByDescending(x => x.Grade).ToList();
+			foreach (var student in orderedStudents)
+			{
+				Console.WriteLine(student.ToString());
 			}
 		}
 
@@ -25,6 +28,7 @@
 			public string LastName { get; set; }
 			public decimal Grade { get; set; }
 
+			
 			public override string ToString()
 			{
 				return $"{FirstName} {LastName}: {Grade}";
